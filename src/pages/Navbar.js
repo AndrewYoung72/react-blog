@@ -1,15 +1,18 @@
 // import React, { useState, useEffect } from "react";
+import {Tabs, Tab} from "@mui/material"
+ 
 
 
 
 export default function Navbar() {
+
+
+
   return(
-   <nav>
-    <h1>React Blog</h1>
-    <div>
-      <a href="/">Home</a>
-      <a href="/User">User Page</a>
-    </div>
-   </nav>
+    <Tabs textColor="blueGrey"centered>
+  <Tab label="Home" />
+  <Tab label="User" />
+  <Tab label="LogIn" />
+</Tabs>
   );
 }
