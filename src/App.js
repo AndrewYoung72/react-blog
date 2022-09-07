@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import { Box } from "@mui/material";
 
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Box bgcolor="info.main" sx={{}}>
+      <Box bgcolor="info.main">
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       </Box>
       <div className="content">{renderPage()}</div>

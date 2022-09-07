@@ -9,7 +9,7 @@ export default function Navbar() {
 
 
   return(
-    <Tabs textColor="blueGrey"centered>
+    <Tabs color="white"centered>
   <Tab label="Home" />
   <Tab label="User" />
   <Tab label="LogIn" />
