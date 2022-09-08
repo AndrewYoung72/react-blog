@@ -1,12 +1,32 @@
-nav {
+.content {
+  display: grid;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 10px;
+  position: relative;
+}
+
+.content > * {
+  background: #3bbced;
+  padding: 30px;
+}
+
+.nav {
+  grid-column: 1/13 ;
   text-align: center;
   font-size: larger;
   font-weight: bold;
   padding: 10px;
 }
 
-nav a {
+.nav a {
   color: white;
   padding: 20px;
-  background-color: rgb(16, 88, 151);
+}
+
+.page-content {
+  grid-column: 1/13;
+  grid-row: 2/4;
 }
