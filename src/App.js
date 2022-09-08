@@ -1,36 +1,29 @@
-import React, { useState } from "react";
+
+import {BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import Navbar from "./pages/Navbar";
 import User from "./pages/User";
-import Login from "./pages/Login";
-
-
+import Profile from "./pages/Profile";
+import "./App.css"
 
 
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
-    if (currentPage === "User") {
-      return <User />;
-    }
-    return <Login />;
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
+ 
   return (
-    <div className="navbar">
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      <div className="content">
-        <Home />
-      </div>
-    </div>
+    <Router>
+      <nav>
+        <Link to="/" >Home</Link>
+        <Link to="/user">User</Link>
+        <Link to="/profile">Profile</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
+ 
   );
 }
 
