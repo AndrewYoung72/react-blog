@@ -1,25 +1,31 @@
 import React from "react";
+import { FormControl, InputLabel, Input, FormHelperText, Box, InputAdornment } from "@mui/material";
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import { Password } from "@mui/icons-material";
 
 export default function SignIn() {
-  return(
-    <div className="form-content">
-      <form action="" className="signin-form">
-        <input type="text" placeholder="Username..." />
-        <input type="text" placeholder="Password..." />
-      </form>
-      <div className="siBtn">
-        <button>Sign In</button>
-      </div>
-      <div>
-      <form action="" className="signup-form">
-        <input type="text" placeholder="Username..." />
-        <input type="text" placeholder="Email..." />
-        <input type="text" placeholder="Password..." />
-      </form>
-      <div className="suBtn">
-        <button>Sign Up</button>
-      </div>
-      </div>
-    </div>
-  )
+  return (
+    
+      <Box>
+      <FormControl>
+      <Input    id="input-with-icon-adornment"
+          startAdornment={
+            <InputAdornment position="start">
+              <AccountCircle />
+            </InputAdornment>
+          } placeholder="Name..." />
+      <Input
+         id="input-with-icon-adornment"
+         startAdornment={
+           <InputAdornment position="start">
+             <Password />
+           </InputAdornment>
+         } placeholder="Password..." />
+        <FormHelperText id="my-helper-text">
+          We'll never share your data.
+        </FormHelperText>
+      </FormControl>
+      </Box>
+    
+  );
 }

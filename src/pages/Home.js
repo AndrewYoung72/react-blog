@@ -1,14 +1,17 @@
+import { Typography } from "@mui/material"
 import SignIn from "../components/SignIn"
 
 
 export default function Home() {
   return(
-    <div className="home-content">
-      <div className="home-content"><h1>This is the homepage</h1></div>
+    <main>
+      <Typography align="center" variant="h2">Main Feed</Typography>
+      <SignIn />
+    </main>
       
-        <SignIn />
+        
       
-    </div>
+   
     
   )
 }
