@@ -6,7 +6,7 @@ import BlogList from "../components/BlogList"
 export default function Home() {
   return(
     <main>
-      <Typography align="center" variant="h2">Main Feed</Typography>
+      <Typography  align="center" variant="h2" margin={10}>Main Feed</Typography>
       <BlogList />
     </main>
       
