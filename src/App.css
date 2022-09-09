@@ -1,4 +1,4 @@
-.content {
+/* .content {
   display: grid;
   max-width: 960px;
   margin: 0 auto;
@@ -24,6 +24,16 @@
 .nav a {
   color: white;
   padding: 20px;
+  text-decoration: none;
+}
+.nav a:visited {
+  color: white;
+}
+.nav a:hover {
+  color: grey;
+}
+.nav a:active {
+  color: blue;
 }
 
 .page-content {
@@ -47,4 +57,4 @@
 .suBtn{
   padding: 5px;
   text-align: center;
-}
+} */
