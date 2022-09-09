@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import User from "./pages/User";
 import Profile from "./pages/Profile";
 import "./App.css"
+import SignIn from "./components/SignIn";
 
 
 
@@ -25,6 +26,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
       </Routes>
       </div>
+      <div className="signin-box"><SignIn /></div>
+      
       </div>
     </Router>
  

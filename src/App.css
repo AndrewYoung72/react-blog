@@ -27,6 +27,24 @@
 }
 
 .page-content {
-  grid-column: 1/13;
+  grid-column: 4/13;
   grid-row: 2/4;
+}
+
+.signin-box {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.signin-form {
+  padding: 2px;
+}
+.siBtn{
+  padding: 5px;
+  text-align: center;
+}
+
+.suBtn{
+  padding: 5px;
+  text-align: center;
 }
